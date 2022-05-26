@@ -1,1 +1,1 @@
-"# Descending order and Largest Number" 
+"# Problem Solving - Logical Solutions" 
