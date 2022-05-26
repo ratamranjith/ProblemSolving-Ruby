@@ -63,10 +63,10 @@ class GCD
 		return retVal
 	end
 end
-	
-	gcd = GCD.new()
-	p gcd.gcd_numbers(12, 13)
-	p gcd.gcd_euclidean(7, 13)
-	p gcd.gcd_mod_euclidean(0, 11)
-	print("\n  Best Solution  Using Recursive by applying Eucledean Algorithm: ")
-	p gcd.gcd_recursive_eucledean(10, 15)
+
+gcd = GCD.new()
+p gcd.gcd_numbers(12, 13)
+p gcd.gcd_euclidean(7, 13)
+p gcd.gcd_mod_euclidean(0, 11)
+print("\n  Best Solution  Using Recursive by applying Eucledean Algorithm: ")
+p gcd.gcd_recursive_eucledean(10, 15)
