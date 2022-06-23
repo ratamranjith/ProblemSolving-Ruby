@@ -1,3 +1,4 @@
+require "benchmark"
 class GCD
 
 	def initialize()
@@ -5,7 +6,7 @@ class GCD
 		num2 = nil
 	end
 
-#-----------------------------------------------
+	#-----------------------------------------------
 	# GCD - Greatest Common Divisor - Naive Solution
 	def gcd_numbers(num1, num2)
 
@@ -63,9 +64,10 @@ class GCD
 	end
 end
 
-# gcd = GCD.new()
-# p gcd.gcd_numbers(12, 13)
-# p gcd.gcd_euclidean(7, 13)
-# p gcd.gcd_mod_euclidean(0, 11)
-# print("\n  Best Solution  Using Recursive by applying Eucledean Algorithm: ")
-# p gcd.gcd_recursive_eucledean(10, 15)
+Benchmark.bm do |x|
+gcd = GCD.new()
+x.report("Naive 1"){p gcd.gcd_numbers(10, 15)}
+x.report("Naive 2"){p gcd.gcd_euclidean(10, 15)}
+x.report("euclidean algorithm"){p gcd.gcd_mod_euclidean(10, 15)}
+x.report("Best Solution  Using Recursive by applying Eucledean Algorithm:"){p gcd.gcd_recursive_eucledean(10, 15)}
+end
