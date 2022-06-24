@@ -14,7 +14,7 @@ count = 0
 
 #--------------
 # Getting input
-inputValue = 7
+inputValue = 8
 
 #-----------------------
 # Initializing the Array
