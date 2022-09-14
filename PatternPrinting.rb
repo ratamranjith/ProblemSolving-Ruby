@@ -1,12 +1,12 @@
 #----------------------------
 # Print the Following Pattern
-# P 			M
-# 	R 		 A
-# 	   O   R
-# 	     G
-# 	   O   R
-# 	R   	 A 
-# P 			M 
+# P 	      M
+#   R 	    A
+#     O   R
+#       G
+#     O   R
+#   R       A 
+# P 	      M 
 #-----------------
 # Pattern Printing
 def pattern_1(input)
